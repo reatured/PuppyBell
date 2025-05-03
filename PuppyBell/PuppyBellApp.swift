@@ -23,11 +23,28 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct PuppyBellApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var authVM = AuthViewModel()
 
-        var body: some Scene {
-            WindowGroup {
-                ContentView()
-            }
+    init() {
+        FirebaseApp.configure()
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            RootView()
+                .environmentObject(authVM)
         }
+    }
+}
+
+struct RootView: View {
+    @EnvironmentObject var authVM: AuthViewModel
+
+    var body: some View {
+        if authVM.isLoggedIn {
+            MainView() // 你的主界面
+        } else {
+            LoginView()
+        }
+    }
 }
