@@ -14,6 +14,12 @@
 		5EFA21372DC69C7E00C5C3DB /* PuppyBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21362DC69C7E00C5C3DB /* PuppyBellTests.swift */; };
 		5EFA21412DC69C7E00C5C3DB /* PuppyBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21402DC69C7E00C5C3DB /* PuppyBellUITests.swift */; };
 		5EFA21432DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21422DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift */; };
+		5EFA21502DC69E3A00C5C3DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA214F2DC69E3A00C5C3DB /* GoogleService-Info.plist */; };
+		5EFA21512DC69E3A00C5C3DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA214F2DC69E3A00C5C3DB /* GoogleService-Info.plist */; };
+		5EFA21522DC69E3A00C5C3DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA214F2DC69E3A00C5C3DB /* GoogleService-Info.plist */; };
+		5EFA21552DC69F6C00C5C3DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5EFA21542DC69F6C00C5C3DB /* FirebaseAuth */; };
+		5EFA21572DC69F6C00C5C3DB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5EFA21562DC69F6C00C5C3DB /* FirebaseFirestore */; };
+		5EFA21592DC69F6C00C5C3DB /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5EFA21582DC69F6C00C5C3DB /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,7 @@
 		5EFA213C2DC69C7E00C5C3DB /* PuppyBellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyBellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA21402DC69C7E00C5C3DB /* PuppyBellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellUITests.swift; sourceTree = "<group>"; };
 		5EFA21422DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5EFA214F2DC69E3A00C5C3DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFA21592DC69F6C00C5C3DB /* FirebaseMessaging in Frameworks */,
+				5EFA21552DC69F6C00C5C3DB /* FirebaseAuth in Frameworks */,
+				5EFA21572DC69F6C00C5C3DB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,7 @@
 		5EFA21242DC69C7C00C5C3DB /* PuppyBell */ = {
 			isa = PBXGroup;
 			children = (
+				5EFA214F2DC69E3A00C5C3DB /* GoogleService-Info.plist */,
 				5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */,
 				5EFA21272DC69C7C00C5C3DB /* ContentView.swift */,
 				5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */,
@@ -143,6 +154,11 @@
 			dependencies = (
 			);
 			name = PuppyBell;
+			packageProductDependencies = (
+				5EFA21542DC69F6C00C5C3DB /* FirebaseAuth */,
+				5EFA21562DC69F6C00C5C3DB /* FirebaseFirestore */,
+				5EFA21582DC69F6C00C5C3DB /* FirebaseMessaging */,
+			);
 			productName = PuppyBell;
 			productReference = 5EFA21222DC69C7C00C5C3DB /* PuppyBell.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 5EFA21192DC69C7C00C5C3DB;
+			packageReferences = (
+				5EFA21532DC69F6C00C5C3DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5EFA21232DC69C7C00C5C3DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +252,7 @@
 			files = (
 				5EFA212D2DC69C7E00C5C3DB /* Preview Assets.xcassets in Resources */,
 				5EFA212A2DC69C7E00C5C3DB /* Assets.xcassets in Resources */,
+				5EFA21502DC69E3A00C5C3DB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFA21512DC69E3A00C5C3DB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFA21522DC69E3A00C5C3DB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,9 +374,12 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-enable-experimental-feature AccessLevelOnImport";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -408,8 +433,11 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-enable-experimental-feature AccessLevelOnImport";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -435,6 +463,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-enable-experimental-feature AccessLevelOnImport";
 				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -464,6 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-enable-experimental-feature AccessLevelOnImport";
 				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -588,6 +619,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EFA21532DC69F6C00C5C3DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EFA21542DC69F6C00C5C3DB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EFA21532DC69F6C00C5C3DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5EFA21562DC69F6C00C5C3DB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EFA21532DC69F6C00C5C3DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5EFA21582DC69F6C00C5C3DB /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EFA21532DC69F6C00C5C3DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EFA211A2DC69C7C00C5C3DB /* Project object */;
 }
