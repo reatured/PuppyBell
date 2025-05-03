@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EFA21262DC69C7C00C5C3DB /* PuppyBellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */; };
+		5EFA21282DC69C7C00C5C3DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21272DC69C7C00C5C3DB /* ContentView.swift */; };
+		5EFA212A2DC69C7E00C5C3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */; };
+		5EFA212D2DC69C7E00C5C3DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA212C2DC69C7E00C5C3DB /* Preview Assets.xcassets */; };
+		5EFA21372DC69C7E00C5C3DB /* PuppyBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21362DC69C7E00C5C3DB /* PuppyBellTests.swift */; };
+		5EFA21412DC69C7E00C5C3DB /* PuppyBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21402DC69C7E00C5C3DB /* PuppyBellUITests.swift */; };
+		5EFA21432DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21422DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EFA21332DC69C7E00C5C3DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EFA211A2DC69C7C00C5C3DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFA21212DC69C7C00C5C3DB;
+			remoteInfo = PuppyBell;
+		};
+		5EFA213D2DC69C7E00C5C3DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EFA211A2DC69C7C00C5C3DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFA21212DC69C7C00C5C3DB;
+			remoteInfo = PuppyBell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EFA21222DC69C7C00C5C3DB /* PuppyBell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyBell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellApp.swift; sourceTree = "<group>"; };
+		5EFA21272DC69C7C00C5C3DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EFA212C2DC69C7E00C5C3DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EFA21322DC69C7E00C5C3DB /* PuppyBellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyBellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFA21362DC69C7E00C5C3DB /* PuppyBellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellTests.swift; sourceTree = "<group>"; };
+		5EFA213C2DC69C7E00C5C3DB /* PuppyBellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyBellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFA21402DC69C7E00C5C3DB /* PuppyBellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellUITests.swift; sourceTree = "<group>"; };
+		5EFA21422DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EFA211F2DC69C7C00C5C3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA212F2DC69C7E00C5C3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA21392DC69C7E00C5C3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EFA21192DC69C7C00C5C3DB = {
+			isa = PBXGroup;
+			children = (
+				5EFA21242DC69C7C00C5C3DB /* PuppyBell */,
+				5EFA21352DC69C7E00C5C3DB /* PuppyBellTests */,
+				5EFA213F2DC69C7E00C5C3DB /* PuppyBellUITests */,
+				5EFA21232DC69C7C00C5C3DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EFA21232DC69C7C00C5C3DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA21222DC69C7C00C5C3DB /* PuppyBell.app */,
+				5EFA21322DC69C7E00C5C3DB /* PuppyBellTests.xctest */,
+				5EFA213C2DC69C7E00C5C3DB /* PuppyBellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EFA21242DC69C7C00C5C3DB /* PuppyBell */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */,
+				5EFA21272DC69C7C00C5C3DB /* ContentView.swift */,
+				5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */,
+				5EFA212B2DC69C7E00C5C3DB /* Preview Content */,
+			);
+			path = PuppyBell;
+			sourceTree = "<group>";
+		};
+		5EFA212B2DC69C7E00C5C3DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA212C2DC69C7E00C5C3DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EFA21352DC69C7E00C5C3DB /* PuppyBellTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA21362DC69C7E00C5C3DB /* PuppyBellTests.swift */,
+			);
+			path = PuppyBellTests;
+			sourceTree = "<group>";
+		};
+		5EFA213F2DC69C7E00C5C3DB /* PuppyBellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA21402DC69C7E00C5C3DB /* PuppyBellUITests.swift */,
+				5EFA21422DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift */,
+			);
+			path = PuppyBellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EFA21212DC69C7C00C5C3DB /* PuppyBell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFA21462DC69C7E00C5C3DB /* Build configuration list for PBXNativeTarget "PuppyBell" */;
+			buildPhases = (
+				5EFA211E2DC69C7C00C5C3DB /* Sources */,
+				5EFA211F2DC69C7C00C5C3DB /* Frameworks */,
+				5EFA21202DC69C7C00C5C3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuppyBell;
+			productName = PuppyBell;
+			productReference = 5EFA21222DC69C7C00C5C3DB /* PuppyBell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EFA21312DC69C7E00C5C3DB /* PuppyBellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFA21492DC69C7E00C5C3DB /* Build configuration list for PBXNativeTarget "PuppyBellTests" */;
+			buildPhases = (
+				5EFA212E2DC69C7E00C5C3DB /* Sources */,
+				5EFA212F2DC69C7E00C5C3DB /* Frameworks */,
+				5EFA21302DC69C7E00C5C3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EFA21342DC69C7E00C5C3DB /* PBXTargetDependency */,
+			);
+			name = PuppyBellTests;
+			productName = PuppyBellTests;
+			productReference = 5EFA21322DC69C7E00C5C3DB /* PuppyBellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EFA213B2DC69C7E00C5C3DB /* PuppyBellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFA214C2DC69C7E00C5C3DB /* Build configuration list for PBXNativeTarget "PuppyBellUITests" */;
+			buildPhases = (
+				5EFA21382DC69C7E00C5C3DB /* Sources */,
+				5EFA21392DC69C7E00C5C3DB /* Frameworks */,
+				5EFA213A2DC69C7E00C5C3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EFA213E2DC69C7E00C5C3DB /* PBXTargetDependency */,
+			);
+			name = PuppyBellUITests;
+			productName = PuppyBellUITests;
+			productReference = 5EFA213C2DC69C7E00C5C3DB /* PuppyBellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EFA211A2DC69C7C00C5C3DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					5EFA21212DC69C7C00C5C3DB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					5EFA21312DC69C7E00C5C3DB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5EFA21212DC69C7C00C5C3DB;
+					};
+					5EFA213B2DC69C7E00C5C3DB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5EFA21212DC69C7C00C5C3DB;
+					};
+				};
+			};
+			buildConfigurationList = 5EFA211D2DC69C7C00C5C3DB /* Build configuration list for PBXProject "PuppyBell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EFA21192DC69C7C00C5C3DB;
+			productRefGroup = 5EFA21232DC69C7C00C5C3DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EFA21212DC69C7C00C5C3DB /* PuppyBell */,
+				5EFA21312DC69C7E00C5C3DB /* PuppyBellTests */,
+				5EFA213B2DC69C7E00C5C3DB /* PuppyBellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EFA21202DC69C7C00C5C3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA212D2DC69C7E00C5C3DB /* Preview Assets.xcassets in Resources */,
+				5EFA212A2DC69C7E00C5C3DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA21302DC69C7E00C5C3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA213A2DC69C7E00C5C3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EFA211E2DC69C7C00C5C3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA21282DC69C7C00C5C3DB /* ContentView.swift in Sources */,
+				5EFA21262DC69C7C00C5C3DB /* PuppyBellApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA212E2DC69C7E00C5C3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA21372DC69C7E00C5C3DB /* PuppyBellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA21382DC69C7E00C5C3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA21432DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift in Sources */,
+				5EFA21412DC69C7E00C5C3DB /* PuppyBellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EFA21342DC69C7E00C5C3DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFA21212DC69C7C00C5C3DB /* PuppyBell */;
+			targetProxy = 5EFA21332DC69C7E00C5C3DB /* PBXContainerItemProxy */;
+		};
+		5EFA213E2DC69C7E00C5C3DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFA21212DC69C7C00C5C3DB /* PuppyBell */;
+			targetProxy = 5EFA213D2DC69C7E00C5C3DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5EFA21442DC69C7E00C5C3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EFA21452DC69C7E00C5C3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EFA21472DC69C7E00C5C3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PuppyBell/Preview Content\"";
+				DEVELOPMENT_TEAM = NP8VD5GBSC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EFA21482DC69C7E00C5C3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PuppyBell/Preview Content\"";
+				DEVELOPMENT_TEAM = NP8VD5GBSC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5EFA214A2DC69C7E00C5C3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP8VD5GBSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyBell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PuppyBell";
+			};
+			name = Debug;
+		};
+		5EFA214B2DC69C7E00C5C3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP8VD5GBSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyBell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PuppyBell";
+			};
+			name = Release;
+		};
+		5EFA214D2DC69C7E00C5C3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP8VD5GBSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuppyBell;
+			};
+			name = Debug;
+		};
+		5EFA214E2DC69C7E00C5C3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP8VD5GBSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LingyiZhou.PuppyBellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuppyBell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EFA211D2DC69C7C00C5C3DB /* Build configuration list for PBXProject "PuppyBell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA21442DC69C7E00C5C3DB /* Debug */,
+				5EFA21452DC69C7E00C5C3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EFA21462DC69C7E00C5C3DB /* Build configuration list for PBXNativeTarget "PuppyBell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA21472DC69C7E00C5C3DB /* Debug */,
+				5EFA21482DC69C7E00C5C3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EFA21492DC69C7E00C5C3DB /* Build configuration list for PBXNativeTarget "PuppyBellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA214A2DC69C7E00C5C3DB /* Debug */,
+				5EFA214B2DC69C7E00C5C3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EFA214C2DC69C7E00C5C3DB /* Build configuration list for PBXNativeTarget "PuppyBellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA214D2DC69C7E00C5C3DB /* Debug */,
+				5EFA214E2DC69C7E00C5C3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EFA211A2DC69C7C00C5C3DB /* Project object */;
+}
