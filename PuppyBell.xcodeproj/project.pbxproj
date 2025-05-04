@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E67BC042DC6D12200F8FD6B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC032DC6D12200F8FD6B /* AuthView.swift */; };
+		5E67BC062DC7055900F8FD6B /* PuppyBellUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC052DC7055500F8FD6B /* PuppyBellUser.swift */; };
+		5E67BC082DC7112000F8FD6B /* RoleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC072DC7111800F8FD6B /* RoleSelectionView.swift */; };
+		5E67BC0A2DC7113400F8FD6B /* BondingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC092DC7113100F8FD6B /* BondingView.swift */; };
+		5E67BC0C2DC7186F00F8FD6B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC0B2DC7186A00F8FD6B /* MainView.swift */; };
+		5E67BC102DC7289700F8FD6B /* PuppyBellUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC0F2DC7289700F8FD6B /* PuppyBellUser.swift */; };
+		5E67BC112DC7289700F8FD6B /* PuppyBellUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC0F2DC7289700F8FD6B /* PuppyBellUser.swift */; };
+		5E67BC122DC7289700F8FD6B /* PuppyBellUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E67BC0F2DC7289700F8FD6B /* PuppyBellUser.swift */; };
 		5EFA21262DC69C7C00C5C3DB /* PuppyBellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */; };
 		5EFA212A2DC69C7E00C5C3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */; };
 		5EFA212D2DC69C7E00C5C3DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA212C2DC69C7E00C5C3DB /* Preview Assets.xcassets */; };
@@ -40,7 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E67BC032DC6D12200F8FD6B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		5E67BC052DC7055500F8FD6B /* PuppyBellUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellUser.swift; sourceTree = "<group>"; };
+		5E67BC072DC7111800F8FD6B /* RoleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionView.swift; sourceTree = "<group>"; };
+		5E67BC092DC7113100F8FD6B /* BondingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BondingView.swift; sourceTree = "<group>"; };
+		5E67BC0B2DC7186A00F8FD6B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5E67BC0F2DC7289700F8FD6B /* PuppyBellUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellUser.swift; sourceTree = "<group>"; };
 		5EFA21222DC69C7C00C5C3DB /* PuppyBell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyBell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyBellApp.swift; sourceTree = "<group>"; };
 		5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,7 +114,11 @@
 		5EFA21242DC69C7C00C5C3DB /* PuppyBell */ = {
 			isa = PBXGroup;
 			children = (
-				5E67BC032DC6D12200F8FD6B /* AuthView.swift */,
+				5E67BC0B2DC7186A00F8FD6B /* MainView.swift */,
+				5E67BC0F2DC7289700F8FD6B /* PuppyBellUser.swift */,
+				5E67BC092DC7113100F8FD6B /* BondingView.swift */,
+				5E67BC072DC7111800F8FD6B /* RoleSelectionView.swift */,
+				5E67BC052DC7055500F8FD6B /* PuppyBellUser.swift */,
 				9962A4922DC6C04600FD8FC5 /* GoogleService-Info.plist */,
 				5EFA21252DC69C7C00C5C3DB /* PuppyBellApp.swift */,
 				5EFA21292DC69C7E00C5C3DB /* Assets.xcassets */,
@@ -279,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E67BC042DC6D12200F8FD6B /* AuthView.swift in Sources */,
+				5E67BC0A2DC7113400F8FD6B /* BondingView.swift in Sources */,
+				5E67BC082DC7112000F8FD6B /* RoleSelectionView.swift in Sources */,
+				5E67BC062DC7055900F8FD6B /* PuppyBellUser.swift in Sources */,
+				5E67BC0C2DC7186F00F8FD6B /* MainView.swift in Sources */,
+				5E67BC112DC7289700F8FD6B /* PuppyBellUser.swift in Sources */,
 				5EFA21262DC69C7C00C5C3DB /* PuppyBellApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E67BC122DC7289700F8FD6B /* PuppyBellUser.swift in Sources */,
 				5EFA21372DC69C7E00C5C3DB /* PuppyBellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFA21432DC69C7E00C5C3DB /* PuppyBellUITestsLaunchTests.swift in Sources */,
+				5E67BC102DC7289700F8FD6B /* PuppyBellUser.swift in Sources */,
 				5EFA21412DC69C7E00C5C3DB /* PuppyBellUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

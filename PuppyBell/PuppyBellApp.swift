@@ -1,50 +1,30 @@
-//  PuppyBellApp.swift
-//  PuppyBell
-//
-//  Created by Lingyi Zhou on 5/3/25.
-//
-import FirebaseCore
+// PuppyBellApp.swift
+// PuppyBell
+
 import SwiftUI
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-
-  func application(_ application: UIApplication,
-
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-
-    FirebaseApp.configure()
-
-    return true
-
-  }
-
-}
-
-
+// 假数据，后续可以替换为真实用户数据
+let testUser = PuppyBellUser(
+    id: "test123",
+    email: "test@example.com",
+    displayName: "Test User",
+    role: "Master", // 或 "Puppy"
+    bondedUserId: "test456"
+)
 @main
 struct PuppyBellApp: App {
-    @StateObject var authVM = AuthViewModel()
-
-    init() {
-        FirebaseApp.configure()
-    }
-
+    @State private var currentPage = "role" // "role", "bond", "main"
+    @State private var currentUser = testUser
     var body: some Scene {
         WindowGroup {
-            RootView()
-                .environmentObject(authVM)
-        }
-    }
-}
-
-struct RootView: View {
-    @EnvironmentObject var authVM: AuthViewModel
-
-    var body: some View {
-        if authVM.isLoggedIn {
-            MainView() // 你的主界面
-        } else {
-            AuthView()
+            if currentPage == "role" {
+                RoleSelectionView(currentPage: $currentPage, currentUser: $currentUser)
+            }else if currentPage == "bond" {
+                BondingView(currentPage: $currentPage, currentUser: $currentUser)
+            }else{
+                MainView(user: currentUser)
+            }
+            
         }
     }
 }
