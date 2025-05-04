@@ -46,7 +46,7 @@ class AuthViewModel: ObservableObject {
         }
     }
 
-    func signUp(email: String, password: String, completion: @escaping (String?) -> Void) {
+    func signUp(email: String, password: String, displayName: String, role: String, completion: @escaping (String?) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             DispatchQueue.main.async {
                 if let error = error {
@@ -56,14 +56,16 @@ class AuthViewModel: ObservableObject {
                     let userRef = db.collection("users").document(user.uid)
                     userRef.setData([
                         "email": email,
-                        "displayName": "",
-                        "role": NSNull(),
+                        "displayName": displayName,
+                        "role": role,
                         "bondedUserId": NSNull(),
                         "createdAt": FieldValue.serverTimestamp(),
                         "lastLoginAt": FieldValue.serverTimestamp()
                     ], merge: true)
                     self?.isLoggedIn = true
                     self?.email = email
+                    self?.displayName = displayName
+                    self?.userRole = role
                     self?.showRoleSelection = true
                     completion(nil)
                 }
@@ -340,8 +342,10 @@ struct AccountSettingsView: View {
 // MARK: - AuthView
 struct AuthView: View {
     @EnvironmentObject var viewModel: AuthViewModel
-    @State private var email = "richard@james.cn"
-    @State private var password = "901901"
+    @State private var email = ""
+    @State private var password = ""
+    @State private var displayName = ""
+    @State private var selectedRole: String? = nil
     @State private var isSignUp = false
     @State private var errorMessage: String?
     @State private var isLoading = false
@@ -362,6 +366,34 @@ struct AuthView: View {
                         .padding(.bottom, 10)
 
                     Group {
+                        if isSignUp {
+                            TextField("用户名", text: $displayName)
+                                .autocapitalization(.none)
+                                .padding()
+                                .background(Color.white.opacity(0.9))
+                                .cornerRadius(12)
+                                .shadow(radius: 2)
+                            HStack(spacing: 24) {
+                                Button(action: { selectedRole = "master" }) {
+                                    Text("主人")
+                                        .font(.headline)
+                                        .frame(width: 120, height: 50)
+                                        .background(selectedRole == "master" ? Color.blue : Color.blue.opacity(0.85))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(16)
+                                        .shadow(radius: 4)
+                                }
+                                Button(action: { selectedRole = "puppy" }) {
+                                    Text("小狗")
+                                        .font(.headline)
+                                        .frame(width: 120, height: 50)
+                                        .background(selectedRole == "puppy" ? Color.pink : Color.pink.opacity(0.85))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(16)
+                                        .shadow(radius: 4)
+                                }
+                            }
+                        }
                         TextField("Email", text: $email)
                             .keyboardType(.emailAddress)
                             .autocapitalization(.none)
@@ -399,6 +431,7 @@ struct AuthView: View {
                                 .shadow(radius: 4)
                         }
                         .padding(.horizontal, 8)
+                        .disabled(isSignUp && (displayName.isEmpty || selectedRole == nil))
                     }
 
                     Button(action: { isSignUp.toggle() }) {
@@ -413,14 +446,6 @@ struct AuthView: View {
                 .cornerRadius(24)
                 .shadow(radius: 10)
                 .padding(.horizontal, 16)
-                .background(
-                    NavigationLink(
-                        destination: RoleSelectionScreen(viewModel: viewModel),
-                        isActive: $viewModel.showRoleSelection,
-                        label: { EmptyView() }
-                    )
-                    .hidden()
-                )
             }
         }
     }
@@ -429,7 +454,12 @@ struct AuthView: View {
         errorMessage = nil
         isLoading = true
         if isSignUp {
-            viewModel.signUp(email: email, password: password) { error in
+            guard !displayName.isEmpty, let role = selectedRole else {
+                errorMessage = "请输入用户名并选择身份"
+                isLoading = false
+                return
+            }
+            viewModel.signUp(email: email, password: password, displayName: displayName, role: role) { error in
                 isLoading = false
                 if let error = error {
                     errorMessage = error
@@ -441,75 +471,6 @@ struct AuthView: View {
                 if let error = error {
                     errorMessage = error
                 }
-            }
-        }
-    }
-}
-
-// MARK: - RoleSelectionScreen
-struct RoleSelectionScreen: View {
-    @ObservedObject var viewModel: AuthViewModel
-    @State private var isLoading = false
-    @State private var errorMessage: String?
-    @State private var selectedRole: String? = nil
-
-    var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.7), Color.purple.opacity(0.7)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            VStack(spacing: 28) {
-                Text("选择你的身份")
-                    .font(.system(size: 28, weight: .bold))
-                    .foregroundColor(.white)
-                    .shadow(radius: 4)
-                HStack(spacing: 24) {
-                    Button(action: { selectRole("master") }) {
-                        Text("主人")
-                            .font(.headline)
-                            .frame(width: 120, height: 50)
-                            .background(selectedRole == "master" ? Color.blue : Color.blue.opacity(0.85))
-                            .foregroundColor(.white)
-                            .cornerRadius(16)
-                            .shadow(radius: 4)
-                    }
-                    Button(action: { selectRole("puppy") }) {
-                        Text("小狗")
-                            .font(.headline)
-                            .frame(width: 120, height: 50)
-                            .background(selectedRole == "puppy" ? Color.pink : Color.pink.opacity(0.85))
-                            .foregroundColor(.white)
-                            .cornerRadius(16)
-                            .shadow(radius: 4)
-                    }
-                }
-                if isLoading {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                }
-                if let errorMessage = errorMessage {
-                    Text(errorMessage)
-                        .foregroundColor(.red)
-                        .padding(.top, 8)
-                }
-                Spacer()
-            }
-            .padding(32)
-            .background(Color.white.opacity(0.1))
-            .cornerRadius(24)
-            .shadow(radius: 10)
-            .padding(.horizontal, 16)
-        }
-    }
-
-    private func selectRole(_ role: String) {
-        isLoading = true
-        errorMessage = nil
-        viewModel.updateUserRole(role: role) { error in
-            isLoading = false
-            if let error = error {
-                errorMessage = error
-            } else {
-                selectedRole = role
             }
         }
     }
