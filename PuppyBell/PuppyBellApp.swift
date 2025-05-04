@@ -44,7 +44,7 @@ struct RootView: View {
         if authVM.isLoggedIn {
             MainView() // 你的主界面
         } else {
-            LoginView()
+            AuthView()
         }
     }
 }
